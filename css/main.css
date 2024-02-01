@@ -59,7 +59,7 @@ header h1 {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      height: 20px;;
+      height: 20px;
       font-size:16px;
     }
     button.itemDel_btn {
