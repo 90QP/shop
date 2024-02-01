@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Orbit-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family:'Orbit-Regular', '맑은 고딕', Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #c0d2df;
+  padding: 50px;
+}
+
+button {
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+main {
+  background-color: rgb(248, 246, 242);
+  max-width: 600px;
+  margin: auto;
+  min-width: 360px;
+  border-radius: 16px;
+  box-shadow: 0 5px 8px rgba(0,0,0,0.3);
+}
+
+header {
+  height: 48px;
+  background: linear-gradient(90deg, rgba(44,64,157,1) 8%, rgba(240,154,143,1) 95%);
+  border-radius: 16px 16px 0 0;
+}
+header h1 {
+  color:#fff;
+  text-align: center;
+  line-height: 48px;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+}
+
+#content {
+  padding: 16px 32px 32px ;
+  height: 550px;
+  overflow-y: auto; /* 크기를 넘어서면 스크롤을 만듦 */
+}
+  li.item_row {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+  }
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+    span.item_name {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size:16px;
+    }
+    button.itemDel_btn {
+      color:rgb(61, 57, 57);
+      transition: 0.2s ease-in;
+    }
+    .itemDel_btn:hover {
+      color: #b71058;
+      transform: scale(1.1);
+    }
+
+
+footer {
+  background: linear-gradient(90deg, rgba(44,64,157,1) 8%, rgba(240,154,143,1) 95%);
+  border-radius: 0 0 16px 16px;
+  text-align: center;
+}
+  .footer_input {
+    width: 100%;
+    height: 36px;
+    outline: 0;
+    border: 0;
+    padding: 0 16px;
+    font-size:15px;
+  }
+  .footer_input::placeholder {
+    font-size:14px;
+    letter-spacing: 0.75px;
+    font-family: 'Orbit';
+    color:#8a8d9b
+  }
+  .footerAdd_btn {
+    height: 48px;
+    font-size: 24px;
+    color:rgba(255,255,255,0.6);
+    transition:0.2s ease-in;
+  }
+  .footerAdd_btn:hover {
+    color:rgba(255,255,255,1);
+    transform: scale(1.1);
+  }
